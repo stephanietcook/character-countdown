@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <label>Short Message</label> </br>
+        <textarea type="text" id="message" maxlength="20" onkeyup="charcountupdate(this.value)"></textarea>
+    </form>
+
+    <p><span id="charactersLeft">0</span> of 20 characters</p>
+    
+
+    <script>
+
+        function charcountupdate(str) {
+            let maxLength = str.length;
+            document.getElementById("charactersLeft").innerHTML = maxLength;
+        }
+        
+        
+        /* let characters = function() {
+            let maxLength = 20
+            document.getElementById("message").value
+
+            document.getElementById("charactersLeft").innerHTML = maxLength
+        } 
+        */
+
+
+    </script>
+</body>
+</html>
